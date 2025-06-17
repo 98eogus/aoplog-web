@@ -1,8 +1,6 @@
-# aoplog-web
-
 # Spring AOP Logging Practice (Pure Spring + XML 설정)
 
-이 프로젝트는 순수 Spring Framework 기반에서 AOP와 로그 파일 저장 실습을 진행한 예제입니다.
+Spring Framework 기반에서 AOP와 로그 파일 저장 실습을 진행한 예제입니다.
 
 ## 📌 주요 기술
 
