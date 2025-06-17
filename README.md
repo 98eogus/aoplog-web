@@ -23,6 +23,6 @@ Spring Framework 기반에서 AOP와 Logback을 활용해 로그 파일 저장 �
 ## 🔧 실행 방법
 
 1. mvn clean package로 WAR 생성
-2. 외부 Tomcat webapps/`에 .war 파일 복사
+2. 외부 Tomcat webapps/에 .war 파일 복사
 3. startup.bat 실행
 4. http://localhost:8090/aoplog-web/test 호출
