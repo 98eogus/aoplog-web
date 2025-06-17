@@ -1,7 +1,11 @@
-# Spring AOP Logging Practice (Pure Spring + XML 설정)
+# Spring AOP Logging Practice (Spring + XML 설정)
 
-Spring Framework 기반에서 AOP와 로그 파일 저장 실습을 진행한 예제입니다.
+Spring Framework 기반에서 AOP와 Logback을 활용해 로그 파일 저장 실습을 진행한 예제입니다.
 
+## ✅ 사용 목적
+
+운영 중 장애 분석이나 추적을 위한 AOP 기반 로깅 연습
+    
 ## 📌 주요 기술
 
 - Spring Framework (DispatcherServlet 수동 등록)
@@ -24,19 +28,24 @@ Spring Framework 기반에서 AOP와 로그 파일 저장 실습을 진행한 �
 1. `mvn clean package`로 WAR 생성
 2. 외부 Tomcat `webapps/`에 `.war` 파일 복사
 3. `startup.bat` 실행
-4. [http://localhost:8090/app/test](http://localhost:8090/app/test) 호출
+4. [http://localhost:8090/aoplog-web/test] 호출
 
 ## 📁 프로젝트 구조
 aoplog-web/
 ├── src/
-│ ├── main/
-│ │ ├── java/… (Controller, Service, AOP)
-│ │ ├── resources/logback.xml
-│ │ └── webapp/
-│ │ ├── WEB-INF/
-│ │ │ ├── web.xml
-│ │ │ ├── root-context.xml
-│ │ │ └── servlet-context.xml
+│ └── main/
+│ ├── java/
+│ │ └── com.practice.aoplog/
+│ │ ├── controller/
+│ │ ├── service/
+│ │ └── aspect/
+│ ├── resources/
+│ │ └── logback.xml
+│ └── webapp/
+│ └── WEB-INF/
+│ ├── web.xml
+│ ├── root-context.xml
+│ └── servlet-context.xml
 ├── logs/
 │ └── aoplog.log
 ├── pom.xml
